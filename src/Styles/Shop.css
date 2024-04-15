@@ -1,0 +1,141 @@
+.product {
+    width: 100%;
+    height: auto;
+}
+
+.product h1 {
+    text-align: center;
+}
+
+.product-items {
+    /* display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center; */
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto;
+    width: 100%;
+    height: auto;
+    place-items: center;
+}
+
+.shopItem {
+    border-radius: 15px;
+    width: 300px;
+    height: 400px;
+    margin: 15px;
+    box-shadow: 0px 3px 15px rgba(0,0,0,0.2);
+}
+
+.shopItem:hover {
+    box-shadow: 0px 3px 15px rgba(0,0,0,0.5);
+    transition: 0.3s ease-in;
+    cursor: pointer;
+}
+
+.shopItem div {
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    width: 100%;
+    height: 250px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.shopItem h2,p {
+    text-align: center;
+    margin-top: 5px;
+}
+
+.shopItem button {
+    width: 80%;
+    color: black;
+    background-color: white;
+    margin-left: 25px;
+    padding: 5px 0px;
+    border-radius: 10px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    margin-top: 15px;
+}
+
+.shopItem button:hover {
+    color: white;
+    background-color:black;
+}
+
+.catButtons {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px auto;
+    width: 50%;
+}
+
+.catButtons button {
+    color: black;
+    background-color: white;
+    font-size: 1.2rem;
+    padding: 8px 5px;
+    border-radius: 10px;
+    width: 120px;
+}
+
+.catButtons button:hover {
+    color: white;
+    background-color: black;
+    cursor: pointer;
+}
+
+.catButtons button:focus {
+    color: white;
+    background-color: black;
+}
+
+
+
+@media screen and (max-width:1340px){
+    .product-items {
+      justify-content: center; 
+      grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media screen and (max-width:1000px){
+    .product-items{
+       justify-content: center;
+       grid-template-columns: repeat(2, 1fr);
+    }
+    .catButtons {
+        width: 60%;
+    }
+    .catButtons button {
+        font-size: 1rem;
+        width: 100px;
+    }
+}
+@media screen and (max-width:800px){
+    .catButtons {
+        width: 70%;
+    }
+    .catButtons button {
+        font-size: 0.8rem;
+        width: 90px;
+    }
+}
+
+@media screen and (max-width:700px){
+    .product-items{
+       justify-content: center;
+       grid-template-columns: 1fr;
+    }
+    .catButtons {
+        width: 80%;
+    }
+    .catButtons button {
+        font-size: 0.8rem;
+        width: 80px;
+    }
+}

@@ -1,0 +1,72 @@
+.Footer {
+    background-color: black;
+    padding-top: 40px;
+    padding-bottom: 30px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 50px;
+    color: white;
+}
+
+.social a {
+    margin: 10px;
+    color: white;
+}
+
+.other {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-top: 40px;
+   
+}
+
+.social svg {
+    font-size: 3rem;
+}
+
+.contact .services .category .location {
+    margin: 20px;
+    width: 250px;
+}
+
+h2 {
+    text-align: center;
+}
+
+li {
+    list-style: none;
+    text-align: left;
+}
+
+hr {
+    width: 80%;
+    margin-top: 70px;
+    color: hsl(210, 11%, 85%);
+}
+
+.copyright i {
+    color: red;
+}
+
+.facebook {
+    color: blue;
+}
+
+.twitter {
+    color: rgb(8, 151, 247);
+}
+
+.instagram {
+    color: rgb(226, 116, 13);
+}
+
+.copyright svg, .contact svg {
+    font-size: 1rem;
+}
+
+

@@ -1,0 +1,215 @@
+.home {
+    width: 100%;
+    height: 60vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left; */
+    margin-top: 10px;
+    border-radius: 10px;
+}
+
+.item {
+    background-color:#f3f2f2;
+    height: 60vh;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px 450px 450px 10px;
+    border-right: 7px solid rgb(0, 17, 6);
+}
+
+.item h1 {
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+    font-size: 2rem;
+    }
+
+.item p {
+    margin-top: 2px;
+    font-size: 18px;
+    font-style: italic;
+}
+
+.item button {
+    margin-top: 20px;
+    background-color: black;
+    color: white;
+    padding: 10px;
+    font-size: 1.2rem;
+    border-radius: 20px;
+    cursor: pointer;
+} 
+
+.item button:hover {
+    color: black;
+    background-color: white;
+}
+
+@media screen and (max-width: 900px){
+    .home {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 40vh;
+
+    }
+    .item {
+
+        /* position: relative;
+        top: 430px; */
+        border-radius: 10px;
+        border: none;
+        padding: 20px;
+    }
+    .item h1 {
+        font-size: 1.5rem;
+    }    
+}
+
+@media screen and (max-width: 600px){
+    .home {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 40vh;
+    }
+    .item h1 {
+        font-size: 1rem;
+    } 
+    .item p {
+        font-size: 0.9rem;
+        margin-top: 10px;
+    }
+    .item button {
+        padding: 10px;
+        font-size: 0.9rem;
+    }
+}
+
+.discount {
+    margin-top: 60px;
+    width: 100%;
+    height: auto;
+}
+
+.discount h2 {
+        font-family: "Rokkitt", serif;
+        font-optical-sizing: auto;
+        font-weight: 600;
+        font-style: normal;
+        text-align: left;
+        margin-left: 30px;
+}
+
+.discount-items {
+    /* display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center; */
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto;
+    width: 100%;
+    height: auto;
+    place-items: center;
+}
+
+.discountItem {
+    border-radius: 15px;
+    width: 300px;
+    height: 420px;
+    margin: 15px;
+    box-shadow: 0px 3px 15px rgba(0,0,0,0.2);
+}
+
+.discountItem:hover {
+    box-shadow: 0px 3px 15px rgba(0,0,0,0.5);
+    transition: 0.3s ease-in;
+    cursor: pointer;
+}
+
+.discountItem div {
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    width: 100%;
+    height: 250px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.discountItem h2,p,h4 {
+    text-align: center;
+    margin-top: 5px;
+}
+
+.discount h2 span {
+    color: red;
+}
+
+.discount h2 {
+    margin-top: 40px;
+}
+
+.discountItem p {
+    text-decoration: line-through;
+    font-style: italic;
+}
+
+.discountItem button {
+    width: 80%;
+    color: white;
+    background-color: black;
+    margin-left: 25px;
+    padding: 5px 0px;
+    border-radius: 10px;
+    font-size: 1.1rem;
+    cursor: pointer;
+}
+
+.discountItem button:hover {
+    color: black;
+    background-color: white;
+}
+
+@media screen and (max-width:1300px){
+    .discount-items {
+      justify-content: center; 
+    }
+}
+
+@media screen and (max-width:800px){
+    .discount-items{
+       justify-content: center;
+    }
+}
+
+@media screen and (max-width:1340px){
+    .discount-items {
+      justify-content: center; 
+      grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media screen and (max-width:1000px){
+    .discount-items{
+       justify-content: center;
+       grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width:700px){
+    .discount-items{
+       justify-content: center;
+       grid-template-columns: 1fr;
+    }
+}
